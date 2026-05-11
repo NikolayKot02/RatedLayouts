@@ -43,7 +43,7 @@ class $modify(RLLevelSearchLayer, LevelSearchLayer) {
             return;
         }
         bool disableSearch = Mod::get()->getSettingValue<bool>("disableRlSearchLayer"); // please work no. 2
-                CCNode* layer = nullptr; 
+                CCLayer* layer = nullptr; 
         
                 if (disableSearch) {
                     layer = RLMenuLayer::create();
